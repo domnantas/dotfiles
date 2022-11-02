@@ -1,0 +1,134 @@
+type: custom:xiaomi-vacuum-map-card
+map_source:
+  camera: camera.xiaomi_cloud_map_extractor
+calibration_source:
+  camera: true
+entity: vacuum.tomas_ir_dzeris
+vacuum_platform: default
+map_locked: true
+map_modes:
+  - template: vacuum_clean_segment
+    predefined_selections:
+      - id: '16'
+        icon:
+          name: mdi:bed-king
+          x: 27600
+          'y': 21525
+        label:
+          text: Bedroom 
+          x: 27600
+          'y': 21525
+          offset_y: 35
+        outline:
+          - - 26000
+            - 18900
+          - - 29200
+            - 18900
+          - - 29200
+            - 24150
+          - - 27700
+            - 24150
+          - - 27700
+            - 23300
+          - - 26000
+            - 23300
+      - id: '17'
+        icon:
+          name: mdi:shoe-print
+          x: 22600
+          'y': 25750
+        label:
+          text: Shoes
+          x: 22600
+          'y': 25750
+          offset_y: 35
+        outline:
+          - - 21750
+            - 25150
+          - - 23450
+            - 25150
+          - - 23450
+            - 26350
+          - - 21750
+            - 26350
+      - id: '18'
+        icon:
+          name: mdi:bookshelf
+          x: 26500
+          'y': 26300
+        label:
+          text: Hall
+          x: 26500
+          'y': 26300
+          offset_y: 30
+        outline:
+          - - 23450
+            - 25150
+          - - 26000
+            - 25150
+          - - 26000
+            - 23300
+          - - 27500
+            - 23300
+          - - 27500
+            - 27150
+          - - 23450
+            - 27150
+      - id: '19'
+        icon:
+          name: mdi:shower-head
+          x: 28300
+          'y': 26550
+        label:
+          text: Bathroom
+          x: 28300
+          'y': 26550
+          offset_y: 35
+        outline:
+          - - 27500
+            - 25150
+          - - 29100
+            - 25150
+          - - 29100
+            - 27950
+          - - 27500
+            - 27950
+      - id: '20'
+        icon:
+          name: mdi:food-turkey
+          x: 27525
+          'y': 29500
+        label:
+          text: Kitchen
+          x: 27525
+          'y': 29500
+          offset_y: 35
+        outline:
+          - - 26850
+            - 28150
+          - - 28450
+            - 28150
+          - - 28450
+            - 30850
+          - - 26850
+            - 30850
+      - id: '21'
+        icon:
+          name: mdi:sofa
+          x: 24475
+          'y': 29075
+        label:
+          text: Living room
+          x: 24475
+          'y': 29075
+          offset_y: 35
+        outline:
+          - - 22100
+            - 27150
+          - - 26850
+            - 27150
+          - - 26850
+            - 31000
+          - - 22100
+            - 31000
+  - template: vacuum_clean_zone
